@@ -1,0 +1,55 @@
+body {
+  padding-top: 10%;
+  background-image: url('/assets/green-geometric-frame-vector_53876-144367.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-group {
+  padding: 20px;
+}
+ .container {
+  border: none;
+  background-color: white;
+  border-radius: 4px 4px 4px 4px;
+ }
+
+ #btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+ }
+
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 15px;
+  height: 45px;
+  width: 145px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.btn-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 15px;
+  height: 45px;
+  width: 145px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#ancora {
+  text-decoration: none;
+  padding: none;
+  color: rgb(0, 0, 0);
+}
