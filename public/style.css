@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+
 body {
   padding-top: 10%;
   background-image: url('/assets/green-geometric-frame-vector_53876-144367.jpg');
@@ -52,4 +54,30 @@ body {
   text-decoration: none;
   padding: none;
   color: rgb(0, 0, 0);
+}
+
+/*dashboard*/
+
+body#dashboard {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url('assets/dashboard.jpg');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+p.paragrafo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 700px;
+}
+
+a.button-whatsapp {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(48, 126, 66);
+  padding: 10px;
 }

@@ -1,21 +1,14 @@
-const mongoose = require('mongoose');
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASSWORD;
+// |Conexão com o banco de dados|
 
-const connect = () => {
-  mongoose.connect(`mongodb+srv://${dbUser}:${dbPassword}@loginusuarios.6cisbf6.mongodb.net/?retryWrites=true&w=majority`)
-
-  const connection = mongoose.connection;
-
-  connection.on("error", () => {
-    console.log('Erro ao tentar conectar com o MongoDB');
-  })
-
-  connection.on("open", () => {
-    console.log("Conectado ao mongoDB com sucesso!")
-  })
-}
-
-connect();
+  const mongoose = require('mongoose');
+  const server = 'mongodb://localhost:27017'
+  const database = 'LoginUsuarios'
+  
+  mongoose.connect(`${server}/${database}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }).then(() => {console.log('Conexão bem sucedida!')}).catch((err) => {console.error('conection error' + err);
+  process.exit();
+  });
 
 module.exports = mongoose;

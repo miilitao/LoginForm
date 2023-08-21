@@ -6,7 +6,7 @@
       <h2 class="font-weight-bold">Login de usuário</h2>
       <span>Caso seja cadastrado, faça o login: </span>
     </div>
-    <form action="#">
+    <form action="/" method="POST">
       <div class="form-group">
         <input type="email" class="form-control" placeholder="email" name="email">
         <small class="form-text text-muted text-left">ou registre o seu email</small>
@@ -15,8 +15,8 @@
         <input type="password" class="form-control" name="password" placeholder="senha">
       </div>
       <div id="btns">
-        <a type="submit" class="btn-login" href="/">Login</a>
-        <a type="submit" class="btn-register" href="/register">Registrar</a>
+        <input type="submit" value="Login" class="btn-login" href="/dashboard"></input>
+        <a class="btn-register" href="/register">Registrar</a>
       </div>
     </form>
   </div>
